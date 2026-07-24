@@ -2,29 +2,17 @@
 
 int main()
 {
-    float a;
-    printf("Enter Mark");
-    scanf("%f",&a);
+    int n, i, count = 0;
 
-   if (a<0 || a>100)
-   {
-        printf("Invalid Marks");
-   }
-    else if (a>=80 )
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i += 2)
     {
-        printf("A+");
+        count++;
     }
-    else if (a<80 && a>=70)
-    {
-        printf("A");
-    }
-    else if (a<70 && a>=60)
-    {
-        printf("A-");
-    }
-    else if (a<=60)
-    {
-       printf("F");
-    }
+
+    printf("Number of odd numbers = %d\n", count);
+
     return 0;
 }
